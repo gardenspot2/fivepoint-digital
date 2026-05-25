@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fivepoint Digital | Web Gaming Innovators</title>
+    <!-- Favicon -->
+    <link rel="icon" href="a.png" type="image/png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #f8fafc; /* slate-50 */
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="w-full fixed top-0 z-50 glass-card border-b-0 border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <!-- Star Logo -->
+                    <img src="a.png" alt="Fivepoint Digital Logo" class="w-8 h-8 invert opacity-90 drop-shadow-md">
+                    <span class="font-bold text-xl tracking-wider text-white">FIVEPOINT<span class="text-sky-400">DIGITAL</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#projects" class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Our Games</a>
+                        <a href="#upcoming" class="text-sky-400 font-semibold px-3 py-2 rounded-md text-sm transition-colors border border-sky-400/30 bg-sky-400/10 hover:bg-sky-400/20">New Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-24" id="home">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Redefining <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500 glow-text">Browser Gaming</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-xl text-slate-400 mx-auto mb-10">
+                We are Fivepoint Digital, a dedicated team of five independent developers bringing you the best unblocked, accessible, and high-quality web games. 
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg shadow-sky-500/30">
+                    View Our Sites
+                </a>
+            </div>
+        </div>
+
+        <!-- Featured / Upcoming Section -->
+        <div id="upcoming" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="glass-card rounded-2xl p-8 md:p-12 border border-sky-500/30 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-sky-500 rounded-full blur-3xl opacity-20"></div>
+                
+                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                    <div class="w-full md:w-2/3">
+                        <div class="inline-block bg-sky-500/20 text-sky-400 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide border border-sky-500/30">
+                            Currently In Development
+                        </div>
+                        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">The All-New <span class="text-sky-400">Infinity Games Site</span></h2>
+                        <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                            We are currently engineering our biggest project yet, featuring an incredible library of <strong>over 1900 games</strong>. The new Infinity Games Site is designed from the ground up to be better than the rest. Utilizing advanced proxy architecture and dynamic routing, <strong>it easily bypasses Linewize and other strict web filters</strong>. Get ready for an unstoppable, seamless gaming experience anywhere you go.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="w-48 h-48 rounded-2xl flex items-center justify-center shadow-2xl shadow-purple-500/30 overflow-hidden border border-slate-700 hover:border-purple-500/50 transition-all hover:scale-105">
+                            <img src="Gemini_Generated_Image_r8xbasr8xbasr8xb.png" alt="Infinity Games Logo" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Our Previous Work</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">The developers at Fivepoint Digital are the minds behind some of your favorite web game hubs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Project 1 -->
+                <a href="https://gardenspot2.vercel.app/" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1 block">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 Z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Gardenspot Games</h3>
+                    <p class="text-slate-400 text-sm mb-4">A sleek, fast-loading hub packed with premium unblocked titles. Hosted reliably on Vercel.</p>
+                    <div class="flex items-center text-emerald-400 text-sm font-medium">
+                        Visit Site 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://infinitygames.vercel.app/" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-xl p-6 hover:border-purple-500/50 transition-all hover:-translate-y-1 block">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Infinity Games (V1)</h3>
+                    <p class="text-slate-400 text-sm mb-4">The original Infinity Games layout providing endless entertainment and classic browser hits.</p>
+                    <div class="flex items-center text-purple-400 text-sm font-medium">
+                        Visit Site 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://vozharp719.wixsite.com/afilters" target="_blank" rel="noopener noreferrer" class="group glass-card rounded-xl p-6 hover:border-orange-500/50 transition-all hover:-translate-y-1 block">
+                    <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Wix Unblocked Games</h3>
+                    <p class="text-slate-400 text-sm mb-4">A robust collection of curated games designed to be accessible anywhere, built on the Wix platform.</p>
+                    <div class="flex items-center text-orange-400 text-sm font-medium">
+                        Visit Site 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center mt-12 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <!-- Star Logo -->
+                <img src="a.png" alt="Fivepoint Digital Logo" class="w-6 h-6 invert opacity-90 drop-shadow-md">
+                <span class="font-bold text-lg text-white">FIVEPOINT<span class="text-sky-400">DIGITAL</span></span>
+            </div>
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 Fivepoint Digital. All rights reserved. <br>
+                Empowering the next generation of unblocked gaming.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script for anchor links -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
